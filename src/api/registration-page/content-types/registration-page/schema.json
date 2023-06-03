@@ -1,0 +1,32 @@
+{
+  "kind": "singleType",
+  "collectionName": "registration_pages",
+  "info": {
+    "singularName": "registration-page",
+    "pluralName": "registration-pages",
+    "displayName": "Registration Page",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "registrationSubmittedMessage": {
+      "type": "string",
+      "required": true
+    },
+    "registrationSubmittedCloseButtonText": {
+      "type": "string",
+      "required": true
+    },
+    "introText": {
+      "type": "richtext",
+      "required": true
+    },
+    "privacyStatement": {
+      "type": "richtext",
+      "required": true
+    }
+  }
+}
