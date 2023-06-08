@@ -1,0 +1,44 @@
+{
+  "kind": "collectionType",
+  "collectionName": "trainings",
+  "info": {
+    "singularName": "training",
+    "pluralName": "trainings",
+    "displayName": "Training"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "day": {
+      "type": "enumeration",
+      "enum": [
+        "Maandag",
+        "Dinsdag",
+        "Woensdag",
+        "Donderdag",
+        "Vrijdag",
+        "Zaterdag",
+        "Zondag"
+      ],
+      "required": true
+    },
+    "startTime": {
+      "type": "time",
+      "required": true
+    },
+    "endTime": {
+      "type": "time",
+      "required": true
+    },
+    "place": {
+      "type": "string",
+      "default": "Atletiekpiste ‘Netestadion’",
+      "required": true
+    },
+    "comment": {
+      "type": "string"
+    }
+  }
+}
