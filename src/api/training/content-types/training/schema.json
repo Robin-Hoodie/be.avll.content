@@ -4,7 +4,8 @@
   "info": {
     "singularName": "training",
     "pluralName": "trainings",
-    "displayName": "Training"
+    "displayName": "Training",
+    "description": ""
   },
   "options": {
     "draftAndPublish": true
@@ -39,6 +40,16 @@
     },
     "comment": {
       "type": "string"
+    },
+    "type": {
+      "type": "enumeration",
+      "enum": [
+        "youth",
+        "fromCadet",
+        "gTeam",
+        "joggers"
+      ],
+      "required": true
     }
   }
 }
