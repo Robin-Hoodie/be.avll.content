@@ -1,10 +1,10 @@
 {
-  "name": "com-aclyra-strapi",
+  "name": "be.avll.content",
   "private": true,
   "version": "0.1.0",
-  "description": "A Strapi application",
+  "description": "Strapi backend to www.avll.be",
   "scripts": {
-    "develop": "strapi develop",
+    "dev": "strapi develop",
     "start": "strapi start",
     "build": "strapi build",
     "strapi": "strapi"
