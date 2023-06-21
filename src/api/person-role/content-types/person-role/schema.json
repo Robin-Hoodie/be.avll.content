@@ -1,0 +1,36 @@
+{
+  "kind": "collectionType",
+  "collectionName": "person_roles",
+  "info": {
+    "singularName": "person-role",
+    "pluralName": "person-roles",
+    "displayName": "Person Role",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "name": {
+      "type": "enumeration",
+      "enum": [
+        "management",
+        "partyManagement",
+        "official",
+        "confidant",
+        "trainerYouth",
+        "trainerFromCadet",
+        "trainerGTeam",
+        "trainerJoggers"
+      ],
+      "required": true
+    },
+    "people": {
+      "type": "relation",
+      "relation": "manyToMany",
+      "target": "api::person.person",
+      "inversedBy": "roles"
+    }
+  }
+}

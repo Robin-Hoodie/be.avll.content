@@ -1,0 +1,56 @@
+{
+  "kind": "collectionType",
+  "collectionName": "people",
+  "info": {
+    "singularName": "person",
+    "pluralName": "people",
+    "displayName": "Person",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "name": {
+      "type": "string",
+      "required": true
+    },
+    "title": {
+      "type": "string",
+      "required": true
+    },
+    "roles": {
+      "type": "relation",
+      "relation": "manyToMany",
+      "target": "api::person-role.person-role",
+      "mappedBy": "people"
+    },
+    "phoneMobile": {
+      "type": "string"
+    },
+    "phoneLandLine": {
+      "type": "string"
+    },
+    "email": {
+      "type": "email"
+    },
+    "addressStreet": {
+      "type": "string"
+    },
+    "addressZip": {
+      "type": "string"
+    },
+    "addressPlace": {
+      "type": "string"
+    },
+    "profilePhoto": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
+      "allowedTypes": [
+        "images"
+      ]
+    }
+  }
+}
