@@ -1,0 +1,37 @@
+{
+  "kind": "collectionType",
+  "collectionName": "file_links",
+  "info": {
+    "singularName": "file-link",
+    "pluralName": "file-links",
+    "displayName": "File Link",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "description": {
+      "type": "string",
+      "required": true
+    },
+    "file": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
+      "allowedTypes": [
+        "files"
+      ]
+    },
+    "location": {
+      "type": "enumeration",
+      "enum": [
+        "pageVision",
+        "footer"
+      ],
+      "required": true,
+      "private": true
+    }
+  }
+}
