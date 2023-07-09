@@ -1,0 +1,37 @@
+{
+  "kind": "collectionType",
+  "collectionName": "registration_contests",
+  "info": {
+    "singularName": "registration-contest",
+    "pluralName": "registration-contests",
+    "displayName": "Registration Contest"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "title": {
+      "type": "string",
+      "required": true
+    },
+    "dateStart": {
+      "type": "date",
+      "required": true
+    },
+    "dateEnd": {
+      "type": "date"
+    },
+    "location": {
+      "type": "string",
+      "required": true
+    },
+    "dateFinalRegistration": {
+      "type": "date",
+      "required": true
+    },
+    "infoLink": {
+      "type": "string"
+    }
+  }
+}

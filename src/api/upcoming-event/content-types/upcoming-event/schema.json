@@ -33,7 +33,7 @@
       "type": "string",
       "required": true
     },
-    "registrationFinalDate": {
+    "dateFinalRegistration": {
       "type": "date"
     },
     "registrationByClub": {
