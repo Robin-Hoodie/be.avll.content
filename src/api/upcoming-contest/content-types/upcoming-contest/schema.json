@@ -1,27 +1,25 @@
 {
   "kind": "collectionType",
-  "collectionName": "upcoming_events",
+  "collectionName": "upcoming_contests",
   "info": {
-    "singularName": "upcoming-event",
-    "pluralName": "upcoming-events",
-    "displayName": "Upcoming Event",
-    "description": ""
+    "singularName": "upcoming-contest",
+    "pluralName": "upcoming-contests",
+    "displayName": "Upcoming Contest"
   },
   "options": {
     "draftAndPublish": true
   },
   "pluginOptions": {},
   "attributes": {
-    "linkText": {
+    "title": {
       "type": "string",
-      "required": true,
-      "default": "Info en inschrijven"
+      "required": true
     },
     "link": {
       "type": "string",
       "required": true
     },
-    "title": {
+    "linkText": {
       "type": "string",
       "required": true
     },
@@ -38,7 +36,8 @@
     },
     "registrationByClub": {
       "type": "boolean",
-      "default": false
+      "default": false,
+      "required": true
     }
   }
 }
