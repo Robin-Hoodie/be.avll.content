@@ -19,19 +19,21 @@
     "file": {
       "type": "media",
       "multiple": false,
-      "required": false,
+      "required": true,
       "allowedTypes": [
         "files"
       ]
     },
-    "location": {
+    "type": {
       "type": "enumeration",
       "enum": [
-        "pageVision",
-        "footer"
+        "philosophy",
+        "youthPlan",
+        "statutes",
+        "missionStatement",
+        "privacyStatement"
       ],
-      "required": true,
-      "private": true
+      "required": true
     }
   }
 }
