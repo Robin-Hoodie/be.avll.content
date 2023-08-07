@@ -31,6 +31,10 @@
       "relation": "manyToMany",
       "target": "api::person.person",
       "inversedBy": "roles"
+    },
+    "title": {
+      "type": "string",
+      "required": false
     }
   }
 }

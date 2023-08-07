@@ -16,10 +16,6 @@
       "type": "string",
       "required": true
     },
-    "title": {
-      "type": "string",
-      "required": true
-    },
     "roles": {
       "type": "relation",
       "relation": "manyToMany",
