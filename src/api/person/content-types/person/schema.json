@@ -47,6 +47,27 @@
       "allowedTypes": [
         "images"
       ]
+    },
+    "titleAsManagement": {
+      "type": "string"
+    },
+    "titleAsPartyManagement": {
+      "type": "string"
+    },
+    "titleAsConfidant": {
+      "type": "string"
+    },
+    "titleAsTrainerYouth": {
+      "type": "string"
+    },
+    "titleAsTrainerFromCadet": {
+      "type": "string"
+    },
+    "titleAsTrainerGTeam": {
+      "type": "string"
+    },
+    "titleAsTrainerJoggers": {
+      "type": "string"
     }
   }
 }
