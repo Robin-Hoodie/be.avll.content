@@ -68,6 +68,11 @@
     },
     "titleAsTrainerJoggers": {
       "type": "string"
+    },
+    "isProminent": {
+      "type": "boolean",
+      "default": false,
+      "required": true
     }
   }
 }
