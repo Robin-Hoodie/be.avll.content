@@ -31,7 +31,8 @@
         "youthPlan",
         "statutes",
         "missionStatement",
-        "privacyStatement"
+        "privacyStatement",
+        "clubRecord"
       ],
       "required": true
     }
