@@ -29,10 +29,13 @@
       "enum": [
         "philosophy",
         "youthPlan",
-        "statutes",
-        "missionStatement",
+        "houseRules",
+        "vision",
         "privacyStatement",
-        "clubRecord"
+        "clubRecord",
+        "secretariat",
+        "sportAccident",
+        "becomingAMember"
       ],
       "required": true
     }
