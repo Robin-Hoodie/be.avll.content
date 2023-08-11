@@ -32,10 +32,7 @@
         "houseRules",
         "vision",
         "privacyStatement",
-        "clubRecord",
-        "secretariat",
-        "sportAccident",
-        "becomingAMember"
+        "clubRecord"
       ],
       "required": true
     }
