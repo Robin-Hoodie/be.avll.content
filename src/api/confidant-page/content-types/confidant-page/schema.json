@@ -1,10 +1,11 @@
 {
   "kind": "singleType",
-  "collectionName": "welcome_articles",
+  "collectionName": "confidant_pages",
   "info": {
-    "singularName": "welcome-article",
-    "pluralName": "welcome-articles",
-    "displayName": "Welcome Article"
+    "singularName": "confidant-page",
+    "pluralName": "confidant-pages",
+    "displayName": "Confidant Page",
+    "description": ""
   },
   "options": {
     "draftAndPublish": true
@@ -16,7 +17,8 @@
       "required": true
     },
     "title": {
-      "type": "string"
+      "type": "string",
+      "required": true
     }
   }
 }
