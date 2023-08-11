@@ -1,0 +1,23 @@
+{
+  "kind": "singleType",
+  "collectionName": "recreational_clothing_pages",
+  "info": {
+    "singularName": "recreational-clothing-page",
+    "pluralName": "recreational-clothing-pages",
+    "displayName": "Recreational Clothing Page"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "title": {
+      "type": "string",
+      "required": true
+    },
+    "content": {
+      "type": "richtext",
+      "required": true
+    }
+  }
+}
