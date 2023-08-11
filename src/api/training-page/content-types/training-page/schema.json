@@ -1,0 +1,35 @@
+{
+  "kind": "singleType",
+  "collectionName": "training_pages",
+  "info": {
+    "singularName": "training-page",
+    "pluralName": "training-pages",
+    "displayName": "Training Page"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "title": {
+      "type": "string",
+      "required": true
+    },
+    "introYouth": {
+      "type": "richtext",
+      "required": true
+    },
+    "introFromCadet": {
+      "type": "richtext",
+      "required": true
+    },
+    "introGTeam": {
+      "type": "richtext",
+      "required": true
+    },
+    "introJoggers": {
+      "type": "richtext",
+      "required": true
+    }
+  }
+}
