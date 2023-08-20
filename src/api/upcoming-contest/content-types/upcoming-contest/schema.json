@@ -4,7 +4,8 @@
   "info": {
     "singularName": "upcoming-contest",
     "pluralName": "upcoming-contests",
-    "displayName": "Upcoming Contest"
+    "displayName": "Upcoming Contest",
+    "description": ""
   },
   "options": {
     "draftAndPublish": true
@@ -15,11 +16,11 @@
       "type": "string",
       "required": true
     },
-    "link": {
+    "primaryLink": {
       "type": "string",
       "required": true
     },
-    "linkText": {
+    "primaryLinkText": {
       "type": "string",
       "required": true
     },
@@ -38,6 +39,19 @@
       "type": "boolean",
       "default": false,
       "required": true
+    },
+    "secondaryLink": {
+      "type": "string"
+    },
+    "secondaryFile": {
+      "allowedTypes": [
+        "files"
+      ],
+      "type": "media",
+      "multiple": false
+    },
+    "secondaryText": {
+      "type": "string"
     }
   }
 }
