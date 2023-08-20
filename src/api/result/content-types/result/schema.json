@@ -4,7 +4,8 @@
   "info": {
     "singularName": "result",
     "pluralName": "results",
-    "displayName": "Result"
+    "displayName": "Result",
+    "description": ""
   },
   "options": {
     "draftAndPublish": true
@@ -21,7 +22,14 @@
     },
     "link": {
       "type": "string",
-      "required": true
+      "required": false
+    },
+    "file": {
+      "allowedTypes": [
+        "files"
+      ],
+      "type": "media",
+      "multiple": false
     }
   }
 }
