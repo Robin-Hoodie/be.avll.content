@@ -1,0 +1,23 @@
+{
+  "kind": "collectionType",
+  "collectionName": "multimedia_links",
+  "info": {
+    "singularName": "multimedia-link",
+    "pluralName": "multimedia-links",
+    "displayName": "Multimedia Link"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "description": {
+      "type": "string",
+      "required": true
+    },
+    "link": {
+      "type": "string",
+      "required": true
+    }
+  }
+}
