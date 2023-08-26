@@ -33,6 +33,11 @@
     },
     "location": {
       "type": "string"
+    },
+    "links": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::blog-article-link.blog-article-link"
     }
   }
 }
