@@ -43,13 +43,6 @@
     "secondaryLink": {
       "type": "string"
     },
-    "secondaryFile": {
-      "allowedTypes": [
-        "files"
-      ],
-      "type": "media",
-      "multiple": false
-    },
     "secondaryText": {
       "type": "string"
     }

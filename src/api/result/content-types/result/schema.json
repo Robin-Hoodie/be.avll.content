@@ -23,13 +23,6 @@
     "link": {
       "type": "string",
       "required": false
-    },
-    "file": {
-      "allowedTypes": [
-        "files"
-      ],
-      "type": "media",
-      "multiple": false
     }
   }
 }
