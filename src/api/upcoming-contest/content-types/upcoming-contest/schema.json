@@ -43,7 +43,7 @@
     "secondaryLink": {
       "type": "string"
     },
-    "secondaryText": {
+    "secondaryLinkText": {
       "type": "string"
     }
   }
