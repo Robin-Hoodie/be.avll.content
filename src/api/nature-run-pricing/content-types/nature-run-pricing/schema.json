@@ -1,0 +1,31 @@
+{
+  "kind": "singleType",
+  "collectionName": "nature_run_pricings",
+  "info": {
+    "singularName": "nature-run-pricing",
+    "pluralName": "nature-run-pricings",
+    "displayName": "Nature Run Pricing"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "basePrice": {
+      "type": "decimal",
+      "required": true,
+      "min": 0
+    },
+    "memberDiscount": {
+      "type": "decimal",
+      "unique": true,
+      "min": 0,
+      "required": true
+    },
+    "tShirtPrice": {
+      "type": "decimal",
+      "required": true,
+      "min": 0
+    }
+  }
+}
