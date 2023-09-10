@@ -1,0 +1,46 @@
+{
+  "kind": "collectionType",
+  "collectionName": "nature_runs",
+  "info": {
+    "singularName": "nature-run",
+    "pluralName": "nature-runs",
+    "displayName": "Nature Run",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "basePrice": {
+      "type": "decimal",
+      "required": true,
+      "default": 7
+    },
+    "memberDiscount": {
+      "type": "decimal",
+      "required": true,
+      "default": 2
+    },
+    "tShirtPrice": {
+      "type": "decimal",
+      "required": true,
+      "default": 17
+    },
+    "registrationStartDate": {
+      "type": "date",
+      "required": true,
+      "unique": true
+    },
+    "registrationEndDate": {
+      "type": "date",
+      "required": true,
+      "unique": true
+    },
+    "date": {
+      "type": "date",
+      "required": true,
+      "unique": true
+    }
+  }
+}
