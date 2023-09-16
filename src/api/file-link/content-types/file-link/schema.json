@@ -32,7 +32,8 @@
         "houseRules",
         "vision",
         "privacyStatement",
-        "clubRecord"
+        "clubRecord",
+        "trackRecord"
       ],
       "required": true
     }
