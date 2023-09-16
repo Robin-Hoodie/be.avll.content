@@ -1,0 +1,22 @@
+{
+  "kind": "singleType",
+  "collectionName": "youth_work_pages",
+  "info": {
+    "singularName": "youth-work-page",
+    "pluralName": "youth-work-pages",
+    "displayName": "Youth Work Page"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "content": {
+      "type": "richtext",
+      "required": true
+    }
+  }
+}
