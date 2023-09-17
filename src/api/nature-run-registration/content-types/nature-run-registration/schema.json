@@ -1,0 +1,94 @@
+{
+  "kind": "collectionType",
+  "collectionName": "nature_run_registrations",
+  "info": {
+    "singularName": "nature-run-registration",
+    "pluralName": "nature-run-registrations",
+    "displayName": "Nature Run Registration",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "firstName": {
+      "type": "string",
+      "required": true
+    },
+    "lastName": {
+      "type": "string",
+      "required": true
+    },
+    "email": {
+      "type": "string",
+      "required": true
+    },
+    "street": {
+      "type": "string",
+      "required": true
+    },
+    "bus": {
+      "type": "string",
+      "required": false
+    },
+    "zipCode": {
+      "type": "string",
+      "required": true
+    },
+    "gender": {
+      "type": "enumeration",
+      "enum": [
+        "male",
+        "female",
+        "unidentified"
+      ],
+      "required": true
+    },
+    "birthYear": {
+      "type": "integer",
+      "required": true
+    },
+    "emergencyPhoneNumber": {
+      "type": "string",
+      "required": true
+    },
+    "distance": {
+      "type": "enumeration",
+      "enum": [
+        "fiveK",
+        "tenK",
+        "long"
+      ]
+    },
+    "comment": {
+      "type": "text"
+    },
+    "tShirtSize": {
+      "type": "enumeration",
+      "enum": [
+        "XS",
+        "S",
+        "M",
+        "L",
+        "XL",
+        "XXL"
+      ],
+      "required": false
+    },
+    "isMember": {
+      "type": "boolean",
+      "required": true
+    },
+    "agreeToPrivacyTerms": {
+      "type": "boolean",
+      "required": true
+    },
+    "natureRun": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "api::nature-run.nature-run",
+      "inversedBy": "natureRunRegistration"
+    }
+  }
+}

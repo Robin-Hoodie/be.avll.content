@@ -24,7 +24,7 @@
     },
     "tShirtPrice": {
       "type": "decimal",
-      "required": true,
+      "required": false,
       "default": 17
     },
     "registrationStartDate": {
@@ -41,6 +41,17 @@
       "type": "date",
       "required": true,
       "unique": true
+    },
+    "natureRunRegistration": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::nature-run-registration.nature-run-registration",
+      "mappedBy": "natureRun"
+    },
+    "withTShirt": {
+      "type": "boolean",
+      "default": true,
+      "required": true
     }
   }
 }
