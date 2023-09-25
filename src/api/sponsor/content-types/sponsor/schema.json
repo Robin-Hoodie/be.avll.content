@@ -26,6 +26,23 @@
         "videos",
         "audios"
       ]
+    },
+    "name": {
+      "type": "string",
+      "required": true,
+      "unique": false
+    },
+    "addressStreet": {
+      "type": "string",
+      "required": true
+    },
+    "addressZip": {
+      "type": "string",
+      "required": true
+    },
+    "addressPlace": {
+      "type": "string",
+      "required": true
     }
   }
 }
