@@ -33,7 +33,8 @@
         "vision",
         "privacyStatement",
         "clubRecord",
-        "trackRecord"
+        "trackRecord",
+        "calendar"
       ],
       "required": true
     }
