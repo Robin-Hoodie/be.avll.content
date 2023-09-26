@@ -32,8 +32,7 @@
         "houseRules",
         "vision",
         "privacyStatement",
-        "clubRecord",
-        "trackRecord",
+        "record",
         "calendar"
       ],
       "required": true
