@@ -36,6 +36,9 @@
         "calendar"
       ],
       "required": true
+    },
+    "sortPriority": {
+      "type": "integer"
     }
   }
 }
