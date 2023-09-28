@@ -27,10 +27,8 @@
     "type": {
       "type": "enumeration",
       "enum": [
-        "philosophy",
         "youthPlan",
-        "houseRules",
-        "vision",
+        "visionAndOperation",
         "privacyStatement",
         "record",
         "calendar"
