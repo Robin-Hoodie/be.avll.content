@@ -4,7 +4,8 @@
   "info": {
     "singularName": "youth-work-page",
     "pluralName": "youth-work-pages",
-    "displayName": "Youth Work Page"
+    "displayName": "Youth Work Page",
+    "description": ""
   },
   "options": {
     "draftAndPublish": true
@@ -12,7 +13,8 @@
   "pluginOptions": {},
   "attributes": {
     "title": {
-      "type": "string"
+      "type": "string",
+      "required": true
     },
     "content": {
       "type": "richtext",
