@@ -47,11 +47,6 @@
       "relation": "oneToMany",
       "target": "api::nature-run-registration.nature-run-registration",
       "mappedBy": "natureRun"
-    },
-    "withTShirt": {
-      "type": "boolean",
-      "default": true,
-      "required": true
     }
   }
 }
