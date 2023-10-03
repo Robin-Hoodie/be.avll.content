@@ -69,7 +69,37 @@
     "titleAsTrainerJoggers": {
       "type": "string"
     },
-    "isProminent": {
+    "isProminentForManagement": {
+      "type": "boolean",
+      "default": false,
+      "required": true
+    },
+    "isProminentForPartyManagement": {
+      "type": "boolean",
+      "default": false,
+      "required": true
+    },
+    "isProminentForConfidant": {
+      "type": "boolean",
+      "default": false,
+      "required": true
+    },
+    "isProminentForTrainerYouth": {
+      "type": "boolean",
+      "default": false,
+      "required": true
+    },
+    "isProminentForTrainerFromCadet": {
+      "type": "boolean",
+      "default": false,
+      "required": true
+    },
+    "isProminentForTrainerGTeam": {
+      "type": "boolean",
+      "default": false,
+      "required": true
+    },
+    "isProminentForTrainerJoggers": {
       "type": "boolean",
       "default": false,
       "required": true
