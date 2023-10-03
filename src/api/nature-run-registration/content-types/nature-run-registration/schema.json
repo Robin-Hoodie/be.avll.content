@@ -84,11 +84,23 @@
       "type": "boolean",
       "required": true
     },
+    "place": {
+      "type": "string",
+      "required": true
+    },
+    "withTShirt": {
+      "type": "boolean",
+      "required": true
+    },
+    "isPaid": {
+      "type": "boolean",
+      "required": true
+    },
     "natureRun": {
       "type": "relation",
       "relation": "manyToOne",
       "target": "api::nature-run.nature-run",
-      "inversedBy": "natureRunRegistration"
+      "inversedBy": "natureRunRegistrations"
     }
   }
 }

@@ -42,7 +42,7 @@
       "required": true,
       "unique": true
     },
-    "natureRunRegistration": {
+    "natureRunRegistrations": {
       "type": "relation",
       "relation": "oneToMany",
       "target": "api::nature-run-registration.nature-run-registration",
