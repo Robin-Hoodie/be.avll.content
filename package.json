@@ -17,7 +17,8 @@
     "@strapi/strapi": "4.11.3",
     "better-sqlite3": "8.0.1",
     "dayjs": "^1.11.10",
-    "pg": "8.11.0"
+    "pg": "8.11.0",
+    "strapi-plugin-import-export-entries": "^1.21.1"
   },
   "author": {
     "name": "Robin-Hoodie"
