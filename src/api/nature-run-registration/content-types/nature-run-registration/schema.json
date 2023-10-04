@@ -72,7 +72,8 @@
         "M",
         "L",
         "XL",
-        "XXL"
+        "XXL",
+        "XXXL"
       ],
       "required": false
     },
