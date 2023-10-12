@@ -102,6 +102,17 @@
       "relation": "manyToOne",
       "target": "api::nature-run.nature-run",
       "inversedBy": "natureRunRegistrations"
+    },
+    "runsWithPK": {
+      "type": "boolean",
+      "default": false,
+      "required": false
+    },
+    "clubName": {
+      "type": "string"
+    },
+    "bibNumber": {
+      "type": "string"
     }
   }
 }

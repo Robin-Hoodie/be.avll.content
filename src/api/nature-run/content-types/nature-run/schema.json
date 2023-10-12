@@ -47,6 +47,11 @@
       "relation": "oneToMany",
       "target": "api::nature-run-registration.nature-run-registration",
       "mappedBy": "natureRun"
+    },
+    "isPK": {
+      "type": "boolean",
+      "default": false,
+      "required": true
     }
   }
 }
