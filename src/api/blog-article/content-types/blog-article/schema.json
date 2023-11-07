@@ -38,6 +38,10 @@
       "type": "relation",
       "relation": "oneToMany",
       "target": "api::blog-article-link.blog-article-link"
+    },
+    "date": {
+      "required": true,
+      "type": "date"
     }
   }
 }

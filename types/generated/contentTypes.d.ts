@@ -730,6 +730,7 @@ export interface ApiBlogArticleBlogArticle extends Schema.CollectionType {
       'oneToMany',
       'api::blog-article-link.blog-article-link'
     >;
+    date: Attribute.Date & Attribute.Required;
     createdAt: Attribute.DateTime;
     updatedAt: Attribute.DateTime;
     publishedAt: Attribute.DateTime;
