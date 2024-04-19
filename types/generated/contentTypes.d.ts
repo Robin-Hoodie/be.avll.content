@@ -912,6 +912,38 @@ export interface ApiContestContest extends Schema.CollectionType {
   };
 }
 
+export interface ApiContestRegistrationInstructionsPageContestRegistrationInstructionsPage
+  extends Schema.SingleType {
+  collectionName: 'contest_registration_instructions_pages';
+  info: {
+    singularName: 'contest-registration-instructions-page';
+    pluralName: 'contest-registration-instructions-pages';
+    displayName: 'Contest Registration Instructions Page';
+  };
+  options: {
+    draftAndPublish: true;
+  };
+  attributes: {
+    title: Attribute.String & Attribute.Required;
+    content: Attribute.RichText & Attribute.Required;
+    createdAt: Attribute.DateTime;
+    updatedAt: Attribute.DateTime;
+    publishedAt: Attribute.DateTime;
+    createdBy: Attribute.Relation<
+      'api::contest-registration-instructions-page.contest-registration-instructions-page',
+      'oneToOne',
+      'admin::user'
+    > &
+      Attribute.Private;
+    updatedBy: Attribute.Relation<
+      'api::contest-registration-instructions-page.contest-registration-instructions-page',
+      'oneToOne',
+      'admin::user'
+    > &
+      Attribute.Private;
+  };
+}
+
 export interface ApiFileLinkFileLink extends Schema.CollectionType {
   collectionName: 'file_links';
   info: {
@@ -1690,6 +1722,7 @@ declare module '@strapi/types' {
       'api::confidant-page.confidant-page': ApiConfidantPageConfidantPage;
       'api::contact-page.contact-page': ApiContactPageContactPage;
       'api::contest.contest': ApiContestContest;
+      'api::contest-registration-instructions-page.contest-registration-instructions-page': ApiContestRegistrationInstructionsPageContestRegistrationInstructionsPage;
       'api::file-link.file-link': ApiFileLinkFileLink;
       'api::g-team-page.g-team-page': ApiGTeamPageGTeamPage;
       'api::multimedia-link.multimedia-link': ApiMultimediaLinkMultimediaLink;

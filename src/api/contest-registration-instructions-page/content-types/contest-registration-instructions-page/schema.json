@@ -1,0 +1,23 @@
+{
+  "kind": "singleType",
+  "collectionName": "contest_registration_instructions_pages",
+  "info": {
+    "singularName": "contest-registration-instructions-page",
+    "pluralName": "contest-registration-instructions-pages",
+    "displayName": "Contest Registration Instructions Page"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "title": {
+      "type": "string",
+      "required": true
+    },
+    "content": {
+      "type": "richtext",
+      "required": true
+    }
+  }
+}
