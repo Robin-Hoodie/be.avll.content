@@ -52,6 +52,19 @@
       "type": "boolean",
       "default": false,
       "required": true
+    },
+    "title": {
+      "type": "string",
+      "required": true
+    },
+    "type": {
+      "type": "enumeration",
+      "enum": [
+        "natureRun",
+        "customRun"
+      ],
+      "required": true,
+      "default": "natureRun"
     }
   }
 }

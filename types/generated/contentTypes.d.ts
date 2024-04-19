@@ -1078,6 +1078,10 @@ export interface ApiNatureRunNatureRun extends Schema.CollectionType {
       'api::nature-run-registration.nature-run-registration'
     >;
     isPK: Attribute.Boolean & Attribute.Required & Attribute.DefaultTo<false>;
+    title: Attribute.String & Attribute.Required;
+    type: Attribute.Enumeration<['natureRun', 'customRun']> &
+      Attribute.Required &
+      Attribute.DefaultTo<'natureRun'>;
     createdAt: Attribute.DateTime;
     updatedAt: Attribute.DateTime;
     publishedAt: Attribute.DateTime;
