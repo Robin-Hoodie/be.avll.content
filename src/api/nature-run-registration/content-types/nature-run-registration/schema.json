@@ -113,6 +113,9 @@
     },
     "bibNumber": {
       "type": "string"
+    },
+    "mollieId": {
+      "type": "string"
     }
   }
 }

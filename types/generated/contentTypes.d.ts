@@ -1105,6 +1105,7 @@ export interface ApiNatureRunRegistrationNatureRunRegistration
     runsWithPK: Attribute.Boolean & Attribute.DefaultTo<false>;
     clubName: Attribute.String;
     bibNumber: Attribute.String;
+    mollieId: Attribute.String;
     createdAt: Attribute.DateTime;
     updatedAt: Attribute.DateTime;
     publishedAt: Attribute.DateTime;
