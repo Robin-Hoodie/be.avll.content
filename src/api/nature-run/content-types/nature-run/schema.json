@@ -57,14 +57,14 @@
       "type": "string",
       "required": true
     },
-    "type": {
-      "type": "enumeration",
-      "enum": [
-        "natureRun",
-        "customRun"
-      ],
+    "emailContent": {
+      "type": "richtext",
+      "required": true
+    },
+    "emailSubject": {
+      "type": "string",
       "required": true,
-      "default": "natureRun"
+      "default": "Bevestiging inschrijving {{natureRunRegistration.distance}} op {{natureRun.date}}"
     }
   }
 }

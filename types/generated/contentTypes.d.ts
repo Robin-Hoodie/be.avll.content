@@ -1079,9 +1079,10 @@ export interface ApiNatureRunNatureRun extends Schema.CollectionType {
     >;
     isPK: Attribute.Boolean & Attribute.Required & Attribute.DefaultTo<false>;
     title: Attribute.String & Attribute.Required;
-    type: Attribute.Enumeration<['natureRun', 'customRun']> &
+    emailContent: Attribute.RichText & Attribute.Required;
+    emailSubject: Attribute.String &
       Attribute.Required &
-      Attribute.DefaultTo<'natureRun'>;
+      Attribute.DefaultTo<'Bevestiging inschrijving {{natureRunRegistration.distance}} op {{natureRun.date}}'>;
     createdAt: Attribute.DateTime;
     updatedAt: Attribute.DateTime;
     publishedAt: Attribute.DateTime;
