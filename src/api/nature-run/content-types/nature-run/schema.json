@@ -12,11 +12,6 @@
   },
   "pluginOptions": {},
   "attributes": {
-    "basePrice": {
-      "type": "decimal",
-      "required": true,
-      "default": 7
-    },
     "memberDiscount": {
       "type": "decimal",
       "required": true,
@@ -65,6 +60,11 @@
       "type": "string",
       "required": true,
       "default": "Bevestiging inschrijving {{natureRunRegistration.distance}} op {{natureRun.date}}"
+    },
+    "distances": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::nature-run-distance.nature-run-distance"
     }
   }
 }

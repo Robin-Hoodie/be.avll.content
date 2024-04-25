@@ -53,14 +53,6 @@
       "type": "string",
       "required": true
     },
-    "distance": {
-      "type": "enumeration",
-      "enum": [
-        "fiveK",
-        "tenK",
-        "long"
-      ]
-    },
     "comment": {
       "type": "text"
     },
@@ -116,6 +108,11 @@
     },
     "mollieId": {
       "type": "string"
+    },
+    "distance": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::nature-run-distance.nature-run-distance"
     }
   }
 }

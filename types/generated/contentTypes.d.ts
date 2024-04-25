@@ -1062,7 +1062,6 @@ export interface ApiNatureRunNatureRun extends Schema.CollectionType {
     draftAndPublish: true;
   };
   attributes: {
-    basePrice: Attribute.Decimal & Attribute.Required & Attribute.DefaultTo<7>;
     memberDiscount: Attribute.Decimal &
       Attribute.Required &
       Attribute.DefaultTo<2>;
@@ -1083,6 +1082,11 @@ export interface ApiNatureRunNatureRun extends Schema.CollectionType {
     emailSubject: Attribute.String &
       Attribute.Required &
       Attribute.DefaultTo<'Bevestiging inschrijving {{natureRunRegistration.distance}} op {{natureRun.date}}'>;
+    distances: Attribute.Relation<
+      'api::nature-run.nature-run',
+      'oneToMany',
+      'api::nature-run-distance.nature-run-distance'
+    >;
     createdAt: Attribute.DateTime;
     updatedAt: Attribute.DateTime;
     publishedAt: Attribute.DateTime;
@@ -1094,6 +1098,43 @@ export interface ApiNatureRunNatureRun extends Schema.CollectionType {
       Attribute.Private;
     updatedBy: Attribute.Relation<
       'api::nature-run.nature-run',
+      'oneToOne',
+      'admin::user'
+    > &
+      Attribute.Private;
+  };
+}
+
+export interface ApiNatureRunDistanceNatureRunDistance
+  extends Schema.CollectionType {
+  collectionName: 'nature_run_distances';
+  info: {
+    singularName: 'nature-run-distance';
+    pluralName: 'nature-run-distances';
+    displayName: 'Nature Run Distance';
+    description: '';
+  };
+  options: {
+    draftAndPublish: true;
+  };
+  attributes: {
+    label: Attribute.String & Attribute.Required;
+    basePrice: Attribute.Decimal &
+      Attribute.Required &
+      Attribute.SetMinMax<{
+        min: 0;
+      }>;
+    createdAt: Attribute.DateTime;
+    updatedAt: Attribute.DateTime;
+    publishedAt: Attribute.DateTime;
+    createdBy: Attribute.Relation<
+      'api::nature-run-distance.nature-run-distance',
+      'oneToOne',
+      'admin::user'
+    > &
+      Attribute.Private;
+    updatedBy: Attribute.Relation<
+      'api::nature-run-distance.nature-run-distance',
       'oneToOne',
       'admin::user'
     > &
@@ -1124,7 +1165,6 @@ export interface ApiNatureRunRegistrationNatureRunRegistration
       Attribute.Required;
     birthYear: Attribute.Integer & Attribute.Required;
     emergencyPhoneNumber: Attribute.String & Attribute.Required;
-    distance: Attribute.Enumeration<['fiveK', 'tenK', 'long']>;
     comment: Attribute.Text;
     tShirtSize: Attribute.Enumeration<
       ['XS', 'S', 'M', 'L', 'XL', 'XXL', 'XXXL']
@@ -1143,6 +1183,11 @@ export interface ApiNatureRunRegistrationNatureRunRegistration
     clubName: Attribute.String;
     bibNumber: Attribute.String;
     mollieId: Attribute.String;
+    distance: Attribute.Relation<
+      'api::nature-run-registration.nature-run-registration',
+      'oneToOne',
+      'api::nature-run-distance.nature-run-distance'
+    >;
     createdAt: Attribute.DateTime;
     updatedAt: Attribute.DateTime;
     publishedAt: Attribute.DateTime;
@@ -1732,6 +1777,7 @@ declare module '@strapi/types' {
       'api::g-team-page.g-team-page': ApiGTeamPageGTeamPage;
       'api::multimedia-link.multimedia-link': ApiMultimediaLinkMultimediaLink;
       'api::nature-run.nature-run': ApiNatureRunNatureRun;
+      'api::nature-run-distance.nature-run-distance': ApiNatureRunDistanceNatureRunDistance;
       'api::nature-run-registration.nature-run-registration': ApiNatureRunRegistrationNatureRunRegistration;
       'api::performance-fee-page.performance-fee-page': ApiPerformanceFeePagePerformanceFeePage;
       'api::person.person': ApiPersonPerson;

@@ -1,0 +1,25 @@
+{
+  "kind": "collectionType",
+  "collectionName": "nature_run_distances",
+  "info": {
+    "singularName": "nature-run-distance",
+    "pluralName": "nature-run-distances",
+    "displayName": "Nature Run Distance",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "label": {
+      "type": "string",
+      "required": true
+    },
+    "basePrice": {
+      "type": "decimal",
+      "required": true,
+      "min": 0
+    }
+  }
+}
