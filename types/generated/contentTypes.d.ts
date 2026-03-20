@@ -1206,6 +1206,37 @@ export interface ApiNatureRunRegistrationNatureRunRegistration
   };
 }
 
+export interface ApiNoNatureRunMessageNoNatureRunMessage
+  extends Schema.SingleType {
+  collectionName: 'no_nature_run_messages';
+  info: {
+    singularName: 'no-nature-run-message';
+    pluralName: 'no-nature-run-messages';
+    displayName: 'No Nature Run Message';
+  };
+  options: {
+    draftAndPublish: true;
+  };
+  attributes: {
+    message: Attribute.Text;
+    createdAt: Attribute.DateTime;
+    updatedAt: Attribute.DateTime;
+    publishedAt: Attribute.DateTime;
+    createdBy: Attribute.Relation<
+      'api::no-nature-run-message.no-nature-run-message',
+      'oneToOne',
+      'admin::user'
+    > &
+      Attribute.Private;
+    updatedBy: Attribute.Relation<
+      'api::no-nature-run-message.no-nature-run-message',
+      'oneToOne',
+      'admin::user'
+    > &
+      Attribute.Private;
+  };
+}
+
 export interface ApiPerformanceFeePagePerformanceFeePage
   extends Schema.SingleType {
   collectionName: 'performance_fee_pages';
@@ -1779,6 +1810,7 @@ declare module '@strapi/types' {
       'api::nature-run.nature-run': ApiNatureRunNatureRun;
       'api::nature-run-distance.nature-run-distance': ApiNatureRunDistanceNatureRunDistance;
       'api::nature-run-registration.nature-run-registration': ApiNatureRunRegistrationNatureRunRegistration;
+      'api::no-nature-run-message.no-nature-run-message': ApiNoNatureRunMessageNoNatureRunMessage;
       'api::performance-fee-page.performance-fee-page': ApiPerformanceFeePagePerformanceFeePage;
       'api::person.person': ApiPersonPerson;
       'api::person-role.person-role': ApiPersonRolePersonRole;

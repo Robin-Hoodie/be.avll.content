@@ -1,0 +1,18 @@
+{
+  "kind": "singleType",
+  "collectionName": "no_nature_run_messages",
+  "info": {
+    "singularName": "no-nature-run-message",
+    "pluralName": "no-nature-run-messages",
+    "displayName": "No Nature Run Message"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "message": {
+      "type": "text"
+    }
+  }
+}
